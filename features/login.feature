@@ -15,6 +15,7 @@ Background:
 
 Scenario: Verify Access         
   Given I push the "Verificar Acceso" button 
+  Then I should see the message "Bienvenide"
 
 
 
