@@ -1,6 +1,6 @@
 Feature: As a Nahual volunteer
-         I want to verify my access the system
-         so I can start using it
+         I want to download the Egresados information
+         So I can save the information in a file
 
 Background:
   Given I am on the Nahual homepage
