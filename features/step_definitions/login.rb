@@ -45,7 +45,6 @@ end
 
 Then('I should be logged in') do
     sleep 25
-    puts "You are logged in"  # Write code here that turns the phrase above into concrete actions
     name = 'RICARDO SANDI SUAREZ'
     find(:xpath, '/html/body/div/div/div[4]/div[1]/div/div/div/span', :text => name)
 end
