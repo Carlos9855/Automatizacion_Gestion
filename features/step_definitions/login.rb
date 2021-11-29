@@ -6,7 +6,7 @@ Given(/^I am on the Nahual homepage$/) do
     visit ('/')
 end
 
-# When I click on the Iniciar Sesion button
+# When I click the Iniciar Sesion button
 When('I click the {string} button') do |string|
     xpath = "/html/body/div/div/div[4]/div[2]/div/button"
     find(:xpath, xpath).click
