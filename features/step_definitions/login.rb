@@ -44,8 +44,7 @@ When('I tap the {string} blue button') do |string|
 end
 
 Then('I should be logged in') do
-    sleep 25
-    name = 'RICARDO SANDI SUAREZ'
+    name = 'Grupo Cinco'
     find(:xpath, '/html/body/div/div/div[4]/div[1]/div/div/div/span', :text => name)
 end
 
