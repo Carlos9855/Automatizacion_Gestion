@@ -52,6 +52,7 @@
 
 # #   END -> BACKGROUND
 
+# Scenario: Logout
 
 # When I click the arrow button next to my username 
 When('I click the arrow button next to my username') do
