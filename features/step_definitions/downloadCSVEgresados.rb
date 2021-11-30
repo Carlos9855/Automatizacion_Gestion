@@ -6,20 +6,20 @@ Given('I push the {string} button on the left sidebar') do |string|
     find(:xpath, xpath).click
 end
 
-#   Then I should see the "Egresados" page
-Then('I should see the {string} page') do |string|
+#   When I see the "Egresados" page
+When('I see the {string} page') do |string|
     find(:xpath, '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[2]/div[1]/h2/div').text.should == "Lista Egresades"
     
 end
 
-#   When I click the "Importar" button on the right 
-When('I click the {string} button on the right') do |string|
+#   And I click the "Importar" button on the right 
+And('I click the {string} button on the right') do |string|
     xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[2]/div[4]/div[2]/div/button"
     find(:xpath, xpath).click
 end
 
 #   And I press the "Descargar Ejemplo" button on the modal
-When('I press the {string} button on the modal') do |string|
+And('I press the {string} button on the modal') do |string|
     xpath = "/html/body/div[2]/div/table/button/a"
     find(:xpath, xpath).click
 end

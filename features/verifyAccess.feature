@@ -1,17 +1,16 @@
 Feature: As a Nahual volunteer
          I want to verify my access the system
-         so I can start using it
+         so I can start using the system features I need 
 
 Background:
   Given I am on the Nahual homepage
-  When I click the "Iniciar Sesion" button
-  When I press the "Iniciar con Google" button 
+  And I click the "Iniciar Sesion" button    
+  And I press the "Iniciar con Google" button 
   And I enter my email
-  When I hit the "Siguiente" button
+  And I hit the "Siguiente" button   
   And I enter my password
-  When I tap the "Siguiente" blue button
-  Then I should be logged in
+  And I tap the "Siguiente" blue button 
 
 Scenario: Verify Access         
   Given I push the "Verificar Acceso" button 
-  Then I should see the message "Bienvenide"
+  Then I see the message "Bienvenide"

@@ -54,14 +54,14 @@
 
 # Scenario: Request Access
 
-# When I click the "Solicitar" button
-When('I select the {string} button') do |string|
+# Given I click the "Solicitar" button
+Given('I select the {string} button') do |string|
     xpath = "/html/body/div/div/div[4]/div[2]/div/div[3]/div/div/div[3]/button"
     find(:xpath, xpath).click
 end 
 
-# And I fill in the "Motivo" field with "Solcito acceso a la página para poder utilizarla. Esto es una prueba automática"
-Given('I fill in the {string} field with {string}') do |string, string2|
+# When I fill in the "Motivo" field with "Solcito acceso a la página para poder utilizarla. Esto es una prueba automática"
+When('I fill in the {string} field with {string}') do |string, string2|
     fill_in 'motivo', :with => "Solcito acceso a la página para poder utilizarla. Esto es una prueba automática"
     sleep 2
 end
