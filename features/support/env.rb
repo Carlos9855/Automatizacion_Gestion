@@ -5,14 +5,8 @@ require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
 
 #PTravel Settings
-ENV['EMAIL']="ricardo.sandi@ucb.edu.bo"
-ENV['PSW']="Ricky@1999"
-
-# ENV['EMAIL']="rickysandis@gmail.com"
-# ENV['PSW']="ricardosnadisuarez"
-
-# ENV['EMAIL']="john.doe.ucbcba@gmail.com"
-# ENV['PSW']="calidad2021"
+ENV['EMAIL']="grupocincocalidad@yahoo.com"
+ENV['PSW']="calidad2021"
 
 Capybara.default_driver = :selenium
 
