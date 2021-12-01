@@ -7,9 +7,9 @@ Background:
   And I click the "Iniciar Sesion" button    
   And I press the "Iniciar con Google" button 
   And I enter my email
-  And I hit the "Siguiente" button   
+  And I tap the "Siguiente" button   
   And I enter my password
-  And I tap the "Siguiente" blue button 
+  And I tap the "Siguiente" button 
   
 
 
