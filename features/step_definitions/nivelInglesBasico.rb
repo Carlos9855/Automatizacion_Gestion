@@ -34,7 +34,6 @@ When("I click on the new option button {string}") do |string|
 
 end
 
-
 Then('I should only see egresades with {string} level of English') do |string|
     xpath ="/html/body/div/div/div[4]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[7]"
     find(:xpath,  xpath,:text => "Basico")
