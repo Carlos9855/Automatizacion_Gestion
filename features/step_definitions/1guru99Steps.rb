@@ -31,7 +31,7 @@ Then(/^I should see the following table:$/) do |table|
   data = table.rows_hash
   counter = 4
   path= find("table")
-  xpath_base_name = './tbody/tr[%i]/td[1]'
+  xpath_base_name = './tbody/tr[%i]/td[1]'      
   xpath_base_name1 = './tbody/tr[%i]/td[2]'
   data.each_pair do |key, value|
      expect(path.find(:xpath, xpath_base_name % [counter])).to have_content(key)
