@@ -16,7 +16,7 @@ Background:
   And I see the message "Bienvenide"
 
 Scenario: Visualize Alumnos          
-  Given I push the "Cursos" button on the left sidebar
+  Given I press the "Cursos" button on the left sidebar
   When I click the "Alumnes" tab
   Then I see the "Alumnes" list
 

@@ -25,7 +25,7 @@ Given(/^I enter my email$/) do
 end
 
 #And I hit the "Siguiente" button
-And('I tap the {string} button') do |string|
+And('I hit the {string} button') do |string|
     xpath = "/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span"
     find(:xpath, xpath).click
 end
