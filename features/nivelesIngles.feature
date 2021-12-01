@@ -1,6 +1,6 @@
 Feature: As a Nahual volunteer
-         I want to filter the egresades with basic english level
-         So I will be able to obtain my search for graduates only with a basic level of English 
+         I want to filter the egresades by english level
+         So I will be able to obtain my search for graduates only with a specific level of English 
 
 Background:
   Given I am on the Nahual homepage
