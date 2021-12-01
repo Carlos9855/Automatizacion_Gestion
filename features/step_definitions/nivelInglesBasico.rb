@@ -1,7 +1,7 @@
 #Scenario: filter egresades by english level   
 
 Given('I push the {string} button on the left menu of the page') do |string|
-    xpath = "/html/body/div/div/div[4]/div[2]/div/div[1]/a[4]"
+    xpath = "/html/body/div/div/div[4]/div[2]/div/div[1]/a[4]/a"
     find(:xpath, xpath).click
 end
 
@@ -39,7 +39,8 @@ end
 #         |   Avanzado    |
 
 When('I click on the new option button {string}') do |string|   
-    xpath =" /html/body/div/div/div[4]/div[2]/div/div[1]/a[4]/a"
+    xpath ="/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div[2]/div[1]"
+    
     find(:xpath, xpath).click
    
 end
