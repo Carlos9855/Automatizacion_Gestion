@@ -20,10 +20,10 @@ And('I press the button with label {string} on the new options view') do |string
     find(:xpath, xpath).click
 end
 
-# When(/^I click on the new option button "([^"]*)" $/) do |nivelingles|
-#     case nivelingles
+# When('I click on the new option button {string} ') do |string|
+#     case string
 #         when "Basico"
-#             xpath ="/html/body/div/div/div[4]/div[2]/div/div[1]/a[2]/a/p"
+#             xpath ="/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div[2]/div[1]"
 #         when "Intermedio"
 #             xpath ="/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div[2]/div[2]"
 #         when "Avanzado"
@@ -49,8 +49,3 @@ Then('I should only see egresades with {string} level of English') do |string|
     xpath ="/html/body/div/div/div[4]/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[7]"
     find(:xpath,  xpath,:text => "Basico")
 end
-
-
-#/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div[2]/div
-
-#//*[@id="root"]/div/div[4]/div[2]/div/div[2]/div[1]/div[2]/div
