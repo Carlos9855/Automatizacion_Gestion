@@ -30,5 +30,16 @@ When('I press the {string} button') do |string|
     find(:xpath, xpath).click
 end
 
+#Filtros Scenario Outline 
+When('I click the {string} option') do |string|
+    if string == "Alfabetización Digital / CABA - Paternal / Martin / Tarde"
+        xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div[1]/span"
+    end
+
+    find(:xpath, xpath).click
+end
+
+
+
 
 

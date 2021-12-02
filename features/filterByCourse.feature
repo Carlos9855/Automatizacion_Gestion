@@ -1,6 +1,6 @@
 Feature: As a Nahual volunteer
-         I want to see the information from a specific Alumno
-         So I can know more about him/her
+         I want to filter the Alumnos list by course
+         So I can see sprecific Alumnos from a course
 
 Background:
   Given I am on the Nahual homepage
@@ -19,10 +19,11 @@ Background:
   And I click the "Alumnes" tab
   And I see the "Alumnes" list
 
-  //BACKGROUND FILTRO //
+  
 
-Scenario: Visualize Alumno          
+Scenario: Filter by course
 
-  Given I click the eye button of the Alumno named "Grupo Cinco"
-  Then I see the information of the Alumno named "Grupo Cinco"
+  Given I click the arrow button next to the course name 
+  When I click the "Alfabetización Digital / CABA - Paternal / Martin / Tarde" option
+  Then I see the "Alfabetización Digital / CABA - Paternal / Martin / Tarde"  Alumnos list
 
