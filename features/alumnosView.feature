@@ -1,6 +1,6 @@
 Feature: As a Nahual volunteer
          I want to see the Alumnos information
-         So I can know which Alumos are on the Nhahual platform
+         So I can know which Alumnos are on the Nhahual platform
 
 Background:
   Given I am on the Nahual homepage
@@ -12,11 +12,11 @@ Background:
   And I click the "Siguiente" button 
   
 
-  And I click the "Verificar Acceso" button 
+  And I tap the "Verificar Acceso" button 
   And I see the message "Bienvenide"
 
 Scenario: Visualize Alumnos          
-  Given I press the "Cursos" button on the left sidebar
+  Given I click the "Cursos" button
   When I click the "Alumnes" tab
   Then I see the "Alumnes" list
 

@@ -16,7 +16,7 @@ Background:
   And I see the message "Bienvenide"
 
 Scenario: Download CSV Egresados file          
-  Given I tap the "Egresades" button
+  Given I click the "Egresades" button
   When I see the "Egresados" page
   And I click the "Importar" button 
   And I click the "Descargar Ejemplo" button

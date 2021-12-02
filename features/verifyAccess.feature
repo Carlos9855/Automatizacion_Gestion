@@ -12,5 +12,5 @@ Background:
   And I click the "Siguiente" button 
 
 Scenario: Verify Access         
-  Given I tap the "Verificar Acceso" button 
+  Given I click the "Verificar Acceso" button 
   Then I see the message "Bienvenide"
