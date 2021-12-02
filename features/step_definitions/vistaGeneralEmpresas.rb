@@ -2,7 +2,7 @@
 
 #   Given I push the "Empresas" button on menu app
 Given('I push the {string} button on menu app') do |string|
-    xpath = "/html/body/div/div/div[4]/div[2]/div/div[1]/a[4]"
+    xpath = "/html/body/div/div/div[4]/div[2]/div/div[1]/a[4]/a"
     find(:xpath, xpath).click
 end
 
