@@ -13,7 +13,7 @@ And('I click the {string} button') do |string|
 end
 
 # And I click on the Iniciar con Google button
-And('I press the {string} button') do |string|
+And('I press the {string} button') do |string| 
     xpath = "/html/body/div/div/div[2]/form/div/div/div/div/div[2]/div[2]/span/div/div/div/div/div/div/div/div/div/div/div[1]/a/div[2]"
     find(:xpath, xpath).click
 end
