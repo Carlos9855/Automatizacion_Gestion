@@ -1,20 +1,20 @@
 Feature: As a Nahual volunteer
          I want to load companies view
-         so I can start using it
+         so I can start using it to see egresades table
 
 Background:
   Given I am on the Nahual homepage
-  When I click the "Iniciar Sesion" button
-  When I press the "Iniciar con Google" button 
-  And I enter my email
-  When I hit the "Siguiente" button
+  And I click the "Iniciar Sesion" button    
+  And I click the "Iniciar con Google" button 
+  And I enter my email 
+  And I click the "Siguiente" button   
   And I enter my password
-  When I tap the "Siguiente" blue button
-  Then I should be logged in
+  And I click the "Siguiente" button 
 
-Given I push the "Verificar Acceso" button 
-  Then I should see the message "Bienvenide"
+  And I click the "Verificar Acceso" button 
+  And I see the message "Bienvenide"
+
 
 Scenario: Load Companies View         
-  Given I push the "Empresas" button on menu app
+  Given I click the "Empresas" button
   Then I can see the "Empresas" page
