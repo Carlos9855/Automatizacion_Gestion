@@ -9,7 +9,7 @@ Background:
   And I enter my email
   And I hit the "Siguiente" button   
   And I enter my password
-  And I tap the "Siguiente" blue button 
+  And I hit the "Siguiente" button 
 
 Scenario: Request Access
 Given I select the "Solicitar" button 

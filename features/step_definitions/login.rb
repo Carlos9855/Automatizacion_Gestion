@@ -13,7 +13,7 @@ And('I click the {string} button') do |string|
 end
 
 # And I click on the Iniciar con Google button
-And('I press the {string} button') do |string|
+And('I press the {string} button') do |string| 
     xpath = "/html/body/div/div/div[2]/form/div/div/div/div/div[2]/div[2]/span/div/div/div/div/div/div/div/div/div/div/div[1]/a/div[2]"
     find(:xpath, xpath).click
 end
@@ -34,18 +34,5 @@ end
 Given(/^I enter my password$/) do
     fill_in 'password', :with => ENV['PSW']
     sleep 2
-    # fill_in 'password', :with => ENV['PSW']
 end
-
-#And I tap the "Siguiente" blue button
-And('I tap the {string} blue button') do |string|
-    xpath = "/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span"
-    find(:xpath, xpath).click
-end
-
-# Then('I should be logged in') do
-#     name = 'Grupo Cinco'
-#     find(:xpath, '/html/body/div/div/div[4]/div[1]/div/div/div/span', :text => name)
-# end
-
 #   END -> BACKGROUND
