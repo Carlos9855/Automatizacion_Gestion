@@ -5,7 +5,6 @@ require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
 
 #PTravel Settings
-
 ENV['EMAIL']="grupocincocalidad@yahoo.com"
 ENV['PSW']="calidad2021"
 
