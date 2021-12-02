@@ -21,6 +21,8 @@ Given('I click the {string} button') do |string|
             xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[2]/div[3]/button"
     elsif string == "Crear"
             xpath = "/html/body/div[2]/div/div[2]/form/button[2]"
+    elsif string == "Cancelar"
+            xpath = "/html/body/div[2]/div/div[2]/form/button[1]"
     end 
     
     find(:xpath, xpath).click
