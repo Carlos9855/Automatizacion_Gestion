@@ -12,7 +12,7 @@ Background:
   And I click the "Siguiente" button 
   
 
-  And I tap the "Verificar Acceso" button 
+  And I click the "Verificar Acceso" button 
   And I see the message "Bienvenide"
 
 Scenario: Download CSV Egresados file          

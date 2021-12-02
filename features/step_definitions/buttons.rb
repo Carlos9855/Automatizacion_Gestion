@@ -17,8 +17,8 @@ Given('I click the {string} button') do |string|
             xpath = "/html/body/div/div/div[4]/div[2]/div/div[3]/div/div/div[2]/button"
     elsif string == "Cursos"
             xpath = "/html/body/div/div/div[4]/div[2]/div/div[1]/a[3]/a"
-    end
-
+    end 
+    
     find(:xpath, xpath).click
 end
 # When I press the {string} button

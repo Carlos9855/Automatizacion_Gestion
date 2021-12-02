@@ -9,6 +9,7 @@ end
 #   Then a CSV file with the filename "example5bb6763d3.csv" should be downloaded 
 Then('a CSV file with the filename {string} should be downloaded') do |string|
     expect(page).to have_link('Descargar Ejemplo', href: "/static/media/example.5bb676d3.csv" )    
+       
 end
 
  
