@@ -17,6 +17,10 @@ Given('I click the {string} button') do |string|
             xpath = "/html/body/div/div/div[4]/div[2]/div/div[3]/div/div/div[2]/button"
     elsif string == "Cursos"
             xpath = "/html/body/div/div/div[4]/div[2]/div/div[1]/a[3]/a"
+    elsif string == "Topico"
+            xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[2]/div[3]/button"
+    elsif string == "Crear"
+            xpath = "/html/body/div[2]/div/div[2]/form/button[2]"
     end 
     
     find(:xpath, xpath).click
@@ -44,6 +48,14 @@ When('I click the {string} option') do |string|
     counter += 1 
 
     # find(:xpath, xpath).click
+end
+
+When('I click the {string} tab') do |string|
+    if (string == 'Alunmes') &&  (expect(page).to have_link('Alumnes', href: "/cursos/alumnes"))
+        click_link('Alumnes')
+    elsif (string == 'Topicos') && (expect(page).to have_link('Topicos', href: "/cursos/topicos"))
+        click_link('Topicos')
+    end    
 end
 
 
