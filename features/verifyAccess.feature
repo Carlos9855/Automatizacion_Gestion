@@ -5,12 +5,12 @@ Feature: As a Nahual volunteer
 Background:
   Given I am on the Nahual homepage
   And I click the "Iniciar Sesion" button    
-  And I press the "Iniciar con Google" button 
-  And I enter my email
-  And I hit the "Siguiente" button   
+  And I click the "Iniciar con Google" button 
+  And I enter my email 
+  And I click the "Siguiente" button   
   And I enter my password
-  And I hit the "Siguiente" button 
+  And I click the "Siguiente" button 
 
 Scenario: Verify Access         
-  Given I push the "Verificar Acceso" button 
+  Given I click the "Verificar Acceso" button 
   Then I see the message "Bienvenide"
