@@ -21,9 +21,18 @@ Background:
 
   
 
-Scenario: Filter by course
+Scenario Outline: Filter by course
 
-  Given I click the arrow button next to the course name 
-  When I click the "Alfabetización Digital / CABA - Paternal / Martin / Tarde" option
-  Then I see the "Alfabetización Digital / CABA - Paternal / Martin / Tarde"  Alumnos list
+  Given I click the course name
+  When I click the "<curso>" option
+  Then I see the "<curso>" list
 
+
+  Examples:
+        | curso                                                            |
+        |   Prueba / CABA - Intive / Juan / loquesea                       |
+        |   Alfabetización Digital / CABA - Paternal / Martin / Tarde      |
+        |   Prueba / CABA - Intive / Juan / Tarde(14-16)                   |
+        |   Tópico editado / CABA - Intive / Mario Bross / 10:30- 12:00    |
+    
+      
