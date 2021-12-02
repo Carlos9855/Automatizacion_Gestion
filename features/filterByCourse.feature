@@ -30,8 +30,8 @@ Scenario Outline: Filter by course
 
   Examples:
         | curso                                                            |
-        |   Prueba / CABA - Intive / Juan / loquesea                       |
         |   Alfabetización Digital / CABA - Paternal / Martin / Tarde      |
+        |   Prueba / CABA - Intive / Juan / loquesea                       |
         |   Prueba / CABA - Intive / Juan / Tarde(14-16)                   |
         |   Tópico editado / CABA - Intive / Mario Bross / 10:30- 12:00    |
     
