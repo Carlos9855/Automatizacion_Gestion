@@ -19,6 +19,8 @@ Background:
   And I click the "Alumnes" tab
   And I see the "Alumnes" list
 
+  //BACKGROUND FILTRO //
+
 Scenario: Visualize Alumno          
 
   Given I click the eye button of the Alumno named "Grupo Cinco"

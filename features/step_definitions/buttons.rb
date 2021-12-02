@@ -30,5 +30,23 @@ When('I press the {string} button') do |string|
     find(:xpath, xpath).click
 end
 
+#Filtros Scenario Outline 
+When('I click the {string} option') do |string|
+    counter = 1
+
+    xpath_base_name = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div[%i]/span' 
+
+    xpath_base_name1 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div%i]/span'      
+    xpath_base_name2 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div[%i]/span'      
+    xpath_base_name3 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div[%i]/span'      
+
+    find(:xpath, xpath_base_name % [counter]).click
+    counter += 1 
+
+    # find(:xpath, xpath).click
+end
+
+
+
 
 
