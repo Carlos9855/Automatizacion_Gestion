@@ -10,5 +10,8 @@ Then('I see the {string} list') do |string|
     elsif string.include? "/" and string.include? "-"
         xpath = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[1]'
         expect(find(:xpath, xpath)).to have_content(string)
+    elsif string == "Topicos"
+        find(:xpath, '/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/a[4]').text.should == "Topicos"
     end                 
 end
+
