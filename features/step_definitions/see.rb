@@ -12,6 +12,11 @@ Then('I see the {string} list') do |string|
         expect(find(:xpath, xpath)).to have_content(string)
     elsif string == "Topicos"
         find(:xpath, '/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/a[4]').text.should == "Topicos"
+    elsif string == "Crear Nodo"
+        find(:xpath, '/html/body/div[2]/div/div[1]/div/div').text.should == "Crear Nodo"
+    elsif string == "Lista Egresades"
+        find(:xpath, '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[2]/div[1]/h2/div').text.should == "Lista Egresades"
     end                 
 end
+
 

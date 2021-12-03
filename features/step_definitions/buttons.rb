@@ -59,6 +59,12 @@ end
 When('I press the buton x to close the filter called {string}') do |string|
     if string == "Quitar Todos"
         xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/a"
+    elsif string == "Nuevo Curso"
+        xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[4]/button"
+    elsif string == "Nodo"
+        xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[2]/div/div/div[3]/button"
+    elsif string == "Crear"
+        xpath = "/html/body/div[2]/div/div[3]/button[2]"
     end
 
     find(:xpath, xpath).click
@@ -78,11 +84,7 @@ When('I click the {string} option') do |string|
     counter += 1 
 end
 
-When('I click the {string} tab') do |string|
-    if expect(page).to have_link(string, href: "/cursos/#{string.downcase}")
-        click_link(string)
-    end    
-end
+
 
 
 
