@@ -19,7 +19,6 @@ Background:
   And I click the "Alumnes" tab
   And I see the "Alumnes" list
 
-  //BACKGROUND FILTRO //
 
 Scenario: Visualize Alumno          
 
