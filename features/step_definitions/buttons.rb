@@ -53,10 +53,8 @@ When('I click the {string} option') do |string|
 end
 
 When('I click the {string} tab') do |string|
-    if (string == 'Alunmes') &&  (expect(page).to have_link('Alumnes', href: "/cursos/alumnes"))
-        click_link('Alumnes')
-    elsif (string == 'Topicos') && (expect(page).to have_link('Topicos', href: "/cursos/topicos"))
-        click_link('Topicos')
+    if expect(page).to have_link(string, href: "/cursos/#{string.downcase}")
+        click_link(string)
     end    
 end
 
