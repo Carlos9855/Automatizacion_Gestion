@@ -3,9 +3,9 @@ When(/^I enter the data for a new course$/) do |table|
     data.each_pair do |key, value|
         case key
         when "Año:"
-            fill_in 'ui fluid input', :with => value
-        when "Priodo:"
-            fill_in 'ui fluid input', :with => value
+            fill_in '/html/body/div[2]/div/div[2]/form/div[1]/div/input', :with => value
+        when "Periodo:"
+            fill_in '/html/body/div[2]/div/div[2]/form/div[2]/div/input', :with => value
         end
     end
 end

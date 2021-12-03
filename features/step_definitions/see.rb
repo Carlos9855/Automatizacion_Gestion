@@ -7,6 +7,10 @@ Then('I see the {string} list') do |string|
         find(:xpath, '/html/body/div/div/div[4]/div[2]/div/div[2]/div[2]/div/div/div[1]/h2/div').text.should == "Nodos & Sedes" 
     elsif string == "Nuevo Curso"
         find(:xpath, '/html/body/div[2]/div/div[1]/div/div[2]/div/div').text.should == "Nuevo Curso"
+    elsif string == "Crear Nodo"
+        find(:xpath, '/html/body/div[2]/div/div[1]/div/div').text.should == "Crear Nodo"
+    elsif string == "Lista Egresades"
+        find(:xpath, '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[2]/div[1]/h2/div').text.should == "Lista Egresades"
     end                 
 end
 

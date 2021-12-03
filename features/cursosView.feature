@@ -15,16 +15,16 @@ Background:
   And I click the "Verificar Acceso" button 
   And I see the message "Bienvenide"
 
-Scenario: Visualize Cursos          
-  Given I click the "Cursos" button
-  Then I see the "Cursos" list
+#Scenario: Visualize Cursos          
+#  Given I click the "Cursos" button
+#  Then I see the "Cursos" list
 
 Scenario: Created new Curso
   Given I click the "Cursos" button
   And I press the "Nuevo Curso" button
-  #When I enter the data for a new course
-  #|Año:          |2022                    |
-  #|Periodo:      |1                       |
+  When I enter the data for a new nodo
+  |Año:          |2022                    |
+  |Periodo:      |1                       |
   #|Estado:       |Activo                  |
   #|Curso Para:   |Egresades               |
   #|Topico:       |Alfabetizacion Digital  |

@@ -19,3 +19,14 @@ Scenario: Visualize Nodos Sedes
   Given I click the "Cursos" button
   When I click the "Nodos Sedes" tab
   Then I see the "Nodos Sedes" list
+
+
+#Scenario: Created new Nodo
+#  Given I click the "Cursos" button
+#  And I click the "Nodos Sedes" tab
+#  And I press the "Nodo" button
+#  And I see the "Crear Nodo" list
+#  When I enter the data for a new course
+#  |Nodo:          |Cochabamba-Bolivia      |
+#  And I press the "Crear" button
+#  Then I see the "Nodos Sedes" list
