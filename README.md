@@ -21,13 +21,13 @@ $ gem install sinatra
 En la carpeta _features_ se debe ejecutar el archivo desado, por ejemplo:
 
 ```
-$ cd features/verifyAccess.feature
+$ cucumber features/verifyAccess.feature
 ```
 
 Para ejecutar un _feature_ y exportar los resultados en formato HTML:
 
 ```
-$ cd features/verifyAccess.feature -f html -o verifyAccess.html
+$ cucumber features/verifyAccess.feature -f html -o features/reports/verifyAccess.html
 ```
 
 Para ejecutar todos los _features_:
