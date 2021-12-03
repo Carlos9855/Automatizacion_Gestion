@@ -23,12 +23,18 @@ Given('I click the {string} button') do |string|
             xpath = "/html/body/div[2]/div/div[2]/form/button[2]"
     elsif string == "Cancelar"
             xpath = "/html/body/div[2]/div/div[2]/form/button[1]"
+    elsif string == "Empresas"
+            xpath = "/html/body/div/div/div[4]/div[2]/div/div[1]/a[4]/a"
+    elsif string == "Filtrar"
+            xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div[1]"
+    elsif string == "Nivel de Ingles"
+            xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]"
     end 
     
     find(:xpath, xpath).click
 end
 # When I press the {string} button
-When('I press the {string} button') do |string|
+When('I press {string} button') do |string|
     if string == "Cerrar Sesión"
         xpath = "/html/body/div/div/div[4]/div[1]/div/div/div/div/div/span"
     end
@@ -40,25 +46,22 @@ end
 When('I click the {string} option') do |string|
     counter = 1
 
-    xpath_base_name = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div[%i]/span' 
+    xpath_base_name = '/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div[2]/div[%i]' 
 
-    xpath_base_name1 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div%i]/span'      
-    xpath_base_name2 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div[%i]/span'      
-    xpath_base_name3 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div/div[4]/span/div/div[2]/div[%i]/span'      
+    xpath_base_name1 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div[2]/div[%i]'      
+    xpath_base_name2 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div[2]/div[%i]'      
+    xpath_base_name3 = '/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div/div[2]/div[3]/div[2]/div[%i]'      
 
     find(:xpath, xpath_base_name % [counter]).click
     counter += 1 
-
-    # find(:xpath, xpath).click
 end
 
 When('I click the {string} tab') do |string|
-    if (string == 'Alunmes') &&  (expect(page).to have_link('Alumnes', href: "/cursos/alumnes"))
-        click_link('Alumnes')
-    elsif (string == 'Topicos') && (expect(page).to have_link('Topicos', href: "/cursos/topicos"))
-        click_link('Topicos')
+    if expect(page).to have_link(string, href: "/cursos/#{string.downcase}")
+        click_link(string)
     end    
 end
+
 
 
 

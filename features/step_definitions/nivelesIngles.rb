@@ -10,15 +10,15 @@ When('I see the {string} table on companies page') do |string|
     
 end
 
-And('I click the filter button with the text {string}') do |string|
-    xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div[1]"
-    find(:xpath, xpath).click
-end
+# And('I click the filter button with the text {string}') do |string|
+#     xpath = "/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div[1]"
+#     find(:xpath, xpath).click
+# end
 
-And('I press the button with label {string} on the new options view') do |string|
-    xpath ="/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]"
-    find(:xpath, xpath).click
-end
+# And('I press the button with label {string} on the new options view') do |string|
+#     xpath ="/html/body/div/div/div[4]/div[2]/div/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]"
+#     find(:xpath, xpath).click
+# end
 # When I click on the new option button "Basico"
 When("I click on the new option button {string}") do |string|
     counter = 1

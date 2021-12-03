@@ -12,7 +12,7 @@ Background:
   And I click the "Siguiente" button  
 
 Scenario: Request Access
-Given I click the "Solicitar" button 
+Given I select the "Solicitar" button 
 When I fill in the "Motivo" field with "Solcito acceso a la página para poder utilizarla. Esto es una prueba automática"       
-And I click the "Solicitar" button
+And I push the "Solicitar" button
 Then I should have requested access successfully and a message is displayed 
