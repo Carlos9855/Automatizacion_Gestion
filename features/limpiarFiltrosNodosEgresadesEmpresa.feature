@@ -1,6 +1,6 @@
 Feature: As a Nahual volunteer
-         I want to filter the egresades by nodes Santa fe
-         So I will be able to obtain my search for graduates from Santa Fe 
+         I want to clean the node filter of the egresades table on companies
+         So I can see all the egresades of the different nodes after filtering 
 
 Background:
   Given I am on the Nahual homepage
@@ -14,10 +14,12 @@ Background:
   And I click the "Verificar Acceso" button 
   And I see the message "Bienvenide"
 
-Scenario: filter egresades by node Santa Fe          
+Scenario: clean nodes filter of egresades table on companies           
   Given I click the "Empresas" button
   When I can see the "Empresas" page
   And I click the "Filtrar" button
   And I click the "Nodos" button
   When I press the "Santa Fe" button
   Then I should only see egresades belonging to the Santa Fe node
+  When I press the buton x to close the filter called "Quitar Todos"
+  Then I should see egresades from different nodes

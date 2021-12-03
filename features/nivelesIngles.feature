@@ -15,11 +15,11 @@ Background:
   And I see the message "Bienvenide"
 
 Scenario Outline: filter egresades by english level           
-  Given I click the "Empresas" button 
-  When I see the "Egresades" table on companies page
+  Given I click the "Empresas" button
+  When I can see the "Empresas" page
   And I click the "Filtrar" button
   And I click the "Nivel de Ingles" button
-  When I click the "<nivelingles>" option 
+  When I click on the new option button "<nivelingles>"
   Then I should only see egresades with "<nivelingles>" level of English
 
   Examples:
